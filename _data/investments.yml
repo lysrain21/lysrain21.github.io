@@ -1,0 +1,23 @@
+# Demo data only. Prices are the CNY-equivalent price per share on each date.
+monthly_contribution: 1
+updated_at: 2026-07-01
+companies:
+  - name: 样例公司 A
+    ticker: DEMO-A
+    snapshots:
+      - date: 2026-05-01
+        price_cny: 100
+      - date: 2026-06-01
+        price_cny: 110
+      - date: 2026-07-01
+        price_cny: 105
+
+  - name: 样例公司 B
+    ticker: DEMO-B
+    snapshots:
+      - date: 2026-05-01
+        price_cny: 50
+      - date: 2026-06-01
+        price_cny: 46
+      - date: 2026-07-01
+        price_cny: 52

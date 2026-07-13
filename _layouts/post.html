@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post prose">
+  <header class="post-header">
+    <a class="back-link" href="{{ '/' | relative_url }}">← 返回首页</a>
+    <p class="eyebrow">
+      {% if page.category == 'product' %}产品拆解{% elsif page.category == 'cognition' %}认知迭代{% else %}手记{% endif %}
+    </p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>
+      <span aria-hidden="true">/</span>
+      <span>{{ content | strip_html | number_of_words }} 字</span>
+    </p>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

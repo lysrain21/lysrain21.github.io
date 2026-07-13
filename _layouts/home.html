@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<section class="hero" aria-labelledby="hero-title">
+  <p class="eyebrow">LUCIAN / NOTES</p>
+  <h1 id="hero-title">记录产品、资本与认知的<br>缓慢复利。</h1>
+  <p class="hero-note">一份持续更新的个人思考档案。这里不提供标准答案，只保留判断形成和被修正的过程。</p>
+  <a class="scroll-cue" href="#product">向下阅读 <span aria-hidden="true">↓</span></a>
+</section>
+
+{% assign product_posts = site.posts | where: "category", "product" %}
+{% assign cognition_posts = site.posts | where: "category", "cognition" %}
+
+<section class="journal-section" id="product" aria-labelledby="product-title">
+  <div class="section-heading">
+    <p class="section-number">01</p>
+    <div>
+      <h2 id="product-title">会赚钱的产品</h2>
+      <p>拆解需求、商业模式与长期价值。</p>
+    </div>
+  </div>
+  <ol class="note-list">
+    {% for post in product_posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <div>
+            <h3>{{ post.title | escape }}</h3>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncate: 76 }}</p>
+          </div>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        </a>
+      </li>
+    {% else %}
+      <li class="empty-note">文章正在整理中。</li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="journal-section" id="cognition" aria-labelledby="cognition-title">
+  <div class="section-heading">
+    <p class="section-number">02</p>
+    <div>
+      <h2 id="cognition-title">认知迭代</h2>
+      <p>记录判断如何形成，又如何被现实修正。</p>
+    </div>
+  </div>
+  <ol class="note-list">
+    {% for post in cognition_posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <div>
+            <h3>{{ post.title | escape }}</h3>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncate: 76 }}</p>
+          </div>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        </a>
+      </li>
+    {% else %}
+      <li class="empty-note">文章正在整理中。</li>
+    {% endfor %}
+  </ol>
+</section>

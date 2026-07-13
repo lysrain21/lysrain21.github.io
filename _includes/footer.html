@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <p>持续记录，诚实修正。</p>
+  <nav class="footer-links" aria-label="页尾链接">
+    {% for link in site.social_links %}
+      <a href="{{ link.url }}" rel="me noopener" target="_blank">{{ link.label }}</a>
+    {% endfor %}
+    <span aria-hidden="true">·</span>
+    <a href="{{ '/ledger/' | relative_url }}">练习</a>
+  </nav>
+</footer>

@@ -1,0 +1,25 @@
+title: Lucian
+description: 记录产品、投资练习与认知迭代。
+url: "https://lysrain21.github.io"
+baseurl: "/lucian.github.io"
+lang: zh-CN
+timezone: Asia/Shanghai
+permalink: /notes/:categories/:title/
+
+# Keep Minima as the Jekyll foundation while overriding its visible layouts.
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+social_links:
+  - label: GitHub
+    url: "https://github.com/lysrain21"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .pi
+  - .pi-subagents

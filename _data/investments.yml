@@ -1,23 +1,12 @@
-# Demo data only. Prices are the CNY-equivalent price per share on each date.
+# Prices are recorded in USD per share on the first day of each month.
+currency: USD
 monthly_contribution: 1
 updated_at: 2026-07-01
 companies:
-  - name: 样例公司 A
-    ticker: DEMO-A
+  - name: 美光科技
+    ticker: MU
     snapshots:
-      - date: 2026-05-01
-        price_cny: 100
       - date: 2026-06-01
-        price_cny: 110
+        price_usd: 1027.35
       - date: 2026-07-01
-        price_cny: 105
-
-  - name: 样例公司 B
-    ticker: DEMO-B
-    snapshots:
-      - date: 2026-05-01
-        price_cny: 50
-      - date: 2026-06-01
-        price_cny: 46
-      - date: 2026-07-01
-        price_cny: 52
+        price_usd: 1161.10

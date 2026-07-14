@@ -1,0 +1,3 @@
+{%- assign usd_value = include.value | round: 2 -%}
+{%- assign usd_parts = usd_value | split: "." -%}
+${{ usd_parts[0] }}.{% if usd_parts[1] %}{{ usd_parts[1] }}{% assign usd_decimal_size = usd_parts[1] | size %}{% if usd_decimal_size == 1 %}0{% endif %}{% else %}00{% endif %}

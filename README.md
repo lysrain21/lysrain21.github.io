@@ -48,6 +48,6 @@ description: 首页使用的一句话摘要。
 
 推送到 `main` 后，`.github/workflows/pages.yml` 会自动构建并部署 GitHub Pages。
 
-当前仓库的默认项目地址是：
+当前博客地址是：
 
-`https://lysrain21.github.io/lucian.github.io/`
+`https://lysrain21.github.io/`

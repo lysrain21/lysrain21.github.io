@@ -1,7 +1,7 @@
 title: Lucian
 description: 记录产品、投资练习与认知迭代。
 url: "https://lysrain21.github.io"
-baseurl: "/lucian.github.io"
+baseurl: ""
 lang: zh-CN
 timezone: Asia/Shanghai
 permalink: /notes/:categories/:title/

@@ -18,7 +18,8 @@ social_links:
 
 exclude:
   - README.md
-  - Design.md
+  - AGENTS.md
+  - DESIGN.md
   - Gemfile
   - Gemfile.lock
   - vendor

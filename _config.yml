@@ -10,6 +10,7 @@ permalink: /notes/:categories/:title/
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 social_links:
